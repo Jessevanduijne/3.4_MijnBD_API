@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BezorgDirect.BezorgersApplicatie.BusinessLogic", "BezorgDirect.BezorgersApplicatie.BusinessLogic\BezorgDirect.BezorgersApplicatie.BusinessLogic.csproj", "{454566CE-71EB-4698-998B-FD9C8090C6B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BezorgDirect.BezorgersApplicatie.MockAPI", "BezorgDirect.BezorgersApplicatie.MockAPI\BezorgDirect.BezorgersApplicatie.MockAPI.csproj", "{CFD332A8-D087-48DF-9498-4FD967F2A64E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BezorgDirect.BezorgersApplicatie.Api", "BezorgDirect.BezorgersApplicatie.Api\BezorgDirect.BezorgersApplicatie.Api.csproj", "{F42884FE-CCBA-4C18-8347-582E0BAA09E8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{454566CE-71EB-4698-998B-FD9C8090C6B7} = {454566CE-71EB-4698-998B-FD9C8090C6B7}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8FDC617-B0F0-4663-A218-C22934038E5E}"
+	ProjectSection(SolutionItems) = preProject
+		README.txt = README.txt
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BezorgDirect.BezorgersApplicatie.Tests", "BezorgDirect.BezorgersApplicatie.Tests\BezorgDirect.BezorgersApplicatie.Tests.csproj", "{8C13BECF-6F4D-41F9-9098-0E4A465E60BE}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BezorgDirect.BezorgersApplicatie.Scheduler", "BezorgDirect.BezorgersApplicatie.Scheduler\BezorgDirect.BezorgersApplicatie.Scheduler.csproj", "{440304FF-AC98-4AE1-A570-E0DD3FB70E14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{454566CE-71EB-4698-998B-FD9C8090C6B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454566CE-71EB-4698-998B-FD9C8090C6B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454566CE-71EB-4698-998B-FD9C8090C6B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454566CE-71EB-4698-998B-FD9C8090C6B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFD332A8-D087-48DF-9498-4FD967F2A64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFD332A8-D087-48DF-9498-4FD967F2A64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFD332A8-D087-48DF-9498-4FD967F2A64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFD332A8-D087-48DF-9498-4FD967F2A64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F42884FE-CCBA-4C18-8347-582E0BAA09E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F42884FE-CCBA-4C18-8347-582E0BAA09E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F42884FE-CCBA-4C18-8347-582E0BAA09E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F42884FE-CCBA-4C18-8347-582E0BAA09E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C13BECF-6F4D-41F9-9098-0E4A465E60BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C13BECF-6F4D-41F9-9098-0E4A465E60BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C13BECF-6F4D-41F9-9098-0E4A465E60BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C13BECF-6F4D-41F9-9098-0E4A465E60BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{440304FF-AC98-4AE1-A570-E0DD3FB70E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{440304FF-AC98-4AE1-A570-E0DD3FB70E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{440304FF-AC98-4AE1-A570-E0DD3FB70E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{440304FF-AC98-4AE1-A570-E0DD3FB70E14}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {42DC43CB-5022-4A4C-AA74-54328BC45FFF}
+	EndGlobalSection
+EndGlobal

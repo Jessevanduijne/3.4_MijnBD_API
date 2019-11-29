@@ -1,0 +1,17 @@
+{
+  "id": "ab191b15-f4d4-4374-8164-7664a6817dc7",
+  "emailAddress": "Pythontest@example.com",
+  "phoneNumber": "0612345678",
+  "dateOfBirth": "2019-12-04",
+  "range": 10,
+  "vehicle": 1,
+  "fare": 10,
+  "home": {
+    "id": "7d8a4be5-52b9-4be2-943c-8f5826483730",
+    "latitude": 52.373291,
+    "longitude": 4.89372,
+    "address": "Dam 1, 1012JS, Amsterdam",
+    "postalCode": "1012JS",
+    "place": "Amsterdam"
+  }
+}

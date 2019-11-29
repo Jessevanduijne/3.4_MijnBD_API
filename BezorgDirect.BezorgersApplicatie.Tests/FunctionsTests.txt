@@ -1,0 +1,52 @@
+﻿/* This file was created and written by Lennart de Waart (563079) */
+
+Paste this method in an API controller and call it with a service like Postman.
+Make sure you have the API as well as the Scheduler running when calling this endpoint.
+This endpoint creates a task in the scheduler to update expired notification records:
+
+/// <summary>
+/// This is a testing method for the scheduler
+/// </summary>
+/// <param name="req"></param>
+/// <returns></returns>
+[FunctionName("SchedulerTest")]
+public HttpResponseMessage SchedulerTest(
+   [HttpTrigger(AuthorizationLevel.Function, "get", Route = "schedulerTest")] HttpRequest req)
+{
+    _logger.Information($"Scheduling a job...\n");
+    Scheduler.Scheduler.Instance().ScheduleJob("CheckNotificationContextForExpiration",
+        "trigger_CheckNotificationContextForExpiration", DateTime.Now, 1, 0);
+    return new HttpResponseMessage(HttpStatusCode.OK);
+}
+
+This is some code to test the NotificationsService:
+/// <summary>
+/// This is a testing method for the NotificationsService
+/// </summary>
+/// <param name="req"></param>
+/// <returns>Notification Id</returns>
+[FunctionName("NotificationsServiceTest")]
+public async Task<HttpResponseMessage> NotificationsServiceTest(
+   [HttpTrigger(AuthorizationLevel.Function, "get", Route = "notificationsServiceTest")] HttpRequest req)
+{
+    _logger.Information($"Scheduling a job...\n");
+    Guid deliveryId = Guid.Parse("886E463C-1B0A-4CB6-8E25-AF3879C4E8A4");            
+    Notification na = _notificationsService.NewNotification(deliveryId, Enums.Vehicles.Auto, new DateTime(2019, 10, 28, 13, 45, 00), new LatLng(52.425825, 4.646711), new LatLng(52.389454, 4.612877));
+    result = await _notificationsService.AddNotification(na.Id, na.DelivererId, na.DeliveryId, na.CreatedAt, na.ExpiredAt, na.Status);
+    return result == true
+        ? new HttpResponseMessage(HttpStatusCode.OK)
+        {
+            Content = new StringContent(JsonConvert.SerializeObject(na.Id), Encoding.UTF8, "application/json")
+        }
+        : new HttpResponseMessage(HttpStatusCode.FailedDependency);
+}
+
+This is some code to test the LocationsService's TravelTo:
+	double latFrom = 52.322404;
+	double lngFrom = 4.596926;
+	double latTo = 52.389454;
+	double lngTo = 4.612877;
+	Vehicles vehicle = Vehicles.Auto;
+	DateTime departureTime = DateTime.Now;
+	ILocationsService ls = LocationsService.Instance(_logger);
+	Leg l = await ls.TravelTo(latFrom, lngFrom, latTo, lngTo, vehicle, departureTime, "AIzaSyAtHJfFEvpY1gQCX2USU43OI3qgcfqagGA");         

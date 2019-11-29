@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.AvailabilitiesRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Repositories\AvailabilitiesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.DeliverersRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAABAAAAAAAAAAAIAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Repositories\DeliverersRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.DeliveriesRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\DeliveriesRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.FeedbackRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\FeedbackRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.LocationsRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="7.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\LocationsRepository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Repositories.NotificationsRepository" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositories\NotificationsRepository.cs</FileName>
+      <NewMemberFileName>Repositories\LocationsRepository.cs</NewMemberFileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Availability">
+    <Position X="5" Y="3" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAAAAAAAAAAgAAAAAIAIgAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Availability.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Deliverer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Deliverer">
+    <Position X="8" Y="3" Width="2" />
+    <AssociationLine Name="Home" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Location" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="4.469" />
+        <Point X="10.495" Y="4.469" />
+        <Point X="10.495" Y="7.054" />
+        <Point X="10.542" Y="7.054" Type="JumpStart" />
+        <Point X="10.708" Y="7.054" Type="JumpEnd" />
+        <Point X="11.938" Y="7.054" />
+        <Point X="11.938" Y="8.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Warehouses" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Location" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="5.854" />
+        <Point X="10.353" Y="5.854" />
+        <Point X="10.353" Y="8.562" />
+        <Point X="11" Y="8.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Availabilities" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Availability">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.002" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Deliveries" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Delivery">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-0.99" Y="0.727" Height="0.182" Width="0.837" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="Notifications" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Notification" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="4.125" />
+        <Point X="11" Y="4.125" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.01" Y="0.052" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAgCIABEEgCTAAwBAQQgAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Models\Deliverer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Home" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Warehouses" />
+      <Property Name="Availabilities" />
+      <Property Name="Deliveries" />
+      <Property Name="Notifications" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Delivery">
+    <Position X="8" Y="8.25" Width="2" />
+    <AssociationLine Name="Deliverer" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Deliverer" FixedToPoint="true">
+      <Path>
+        <Point X="8.562" Y="8.25" />
+        <Point X="8.562" Y="7.184" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABEDAEQUJQAIACAAACiCCgYABAIAABAACAAgAAACAgA=</HashCode>
+      <FileName>Models\Delivery.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Deliverer" />
+      <Property Name="Warehouse" />
+      <Property Name="Customer" />
+      <Property Name="Current" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Feedback" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums.Vehicles">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Enums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums.DeliveryStatus">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Enums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums.NotificationStatus">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Enums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums.FeedbackCategories">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Enums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Enums.PaymentMethods">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Enums.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Models\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Feedback">
+    <Position X="5" Y="8.25" Width="2" />
+    <AssociationLine Name="Delivery" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Delivery" FixedFromPoint="true">
+      <Path>
+        <Point X="7" Y="9.875" />
+        <Point X="8" Y="9.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Deliverer" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Deliverer" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="8.25" />
+        <Point X="6" Y="5.558" />
+        <Point X="7.34" Y="5.558" />
+        <Point X="7.34" Y="5.451" />
+        <Point X="8" Y="5.451" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABACAEACAAAAAAAAAAgAAAAAAAIAAAEAAAAAAAAACAg=</HashCode>
+      <FileName>Models\Feedback.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Delivery" />
+      <Property Name="Deliverer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Location">
+    <Position X="11" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAEAAAAAAIAgIAAAAABAAAAACAEAAAAAAAAA=</HashCode>
+      <FileName>Models\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Notification">
+    <Position X="11" Y="3" Width="2" />
+    <AssociationLine Name="Delivery" Type="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.Delivery" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="4.933" />
+        <Point X="10.625" Y="4.933" />
+        <Point X="10.625" Y="7.875" />
+        <Point X="10.437" Y="7.875" Type="JumpStart" />
+        <Point X="10.27" Y="7.875" Type="JumpEnd" />
+        <Point X="9.375" Y="7.875" />
+        <Point X="9.375" Y="8.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.732" Y="0.427" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAACAEAGAAAAAAAAAChAAAAgAAIAAAAAAAAAAAEAAAg=</HashCode>
+      <FileName>Models\Notification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Delivery" />
+      <Property Name="Deliverer" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Models.User">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAgABAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.IAvailabilitiesRepository" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IAvailabilitiesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.IDeliverersRepository" Collapsed="true">
+    <Position X="0.5" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDeliverersRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.IDeliveriesRepository" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IDeliveriesRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.IFeedbackRepository" Collapsed="true">
+    <Position X="0.5" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFeedbackRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.ILocationsRepository" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\ILocationsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BezorgDirect.BezorgersApplicatie.BusinessLogic.Interfaces.INotificationsRepository" Collapsed="true">
+    <Position X="0.5" Y="8" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\INotificationsRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

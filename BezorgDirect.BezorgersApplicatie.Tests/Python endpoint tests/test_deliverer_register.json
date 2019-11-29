@@ -1,0 +1,14 @@
+{
+  "emailAddress": "user12@example.com",
+  "password": "password",
+  "dateOfBirth": "2019-11-04",
+  "fare": 16.75,
+  "home": {
+    "address": "Dam 1",
+    "postalCode": "1012 JS",
+    "place": "Amsterdam"
+  },
+  "phoneNumber": "0612345678",
+  "range": 10,
+  "vehicle": 1
+}

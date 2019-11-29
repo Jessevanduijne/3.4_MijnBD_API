@@ -1,0 +1,25 @@
+{
+  "NotificationsService": {
+    "PercentChanceSortByDeliveryTime": "34",
+    "PercentChanceSortByNotificationAcceptRatio": "33",
+    "PercentChanceSortByNotificationReactionTime": "33",
+    "PercentChanceOfTopSelection": "50",
+    "PercentChanceOfMiddleSelection": "25",
+    "PercentChanceOfBottomSelection": "25",
+    "TopRangeFromTotalInPercentage": "35",
+    "MiddleRangeFromTotalInPercentage": "50",
+    "BottomRangeFromTotalInPercentage": "15",
+    "BreakAtSelectionSize": "5",
+    "MaximumTimeToDeliverInMinutes": "120",
+    "SubtractionOfDeliveryTimeForAvailabilityInMinutes": "30",
+    "ExpirationOfNotificationInMinutes": "10"
+  },
+  "LocationsService": {
+    "GoogleMapsApiKey": "AIzaSyAtHJfFEvpY1gQCX2USU43OI3qgcfqagGA"
+  },
+  "Scheduler": {
+    "AuthToken": "5YGT1H5H468H1H8574JDS3GKJ5489L12189OKUQW515",
+    "ApiUrl": "http://localhost:7071/api/"
+  },
+  "AdminToken": "GERG15TRBrgd24EFhgrvfTHG34RHtrntyj1n65yj2"
+}
