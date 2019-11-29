@@ -2,12 +2,13 @@
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=bezorgersappstorage;AccountKey=IdbmVk4/ivxUcfwDGa6erij4StO/w6z12fgUxiaMM7HPzNJNtk16VLFgEf/cyY1U8WwHgtBUrb4wTNK2meNxhg==;BlobEndpoint=https://bezorgersappstorage.blob.core.windows.net/;TableEndpoint=https://bezorgersappstorage.table.core.windows.net/;QueueEndpoint=https://bezorgersappstorage.queue.core.windows.net/;FileEndpoint=https://bezorgersappstorage.file.core.windows.net/",
-    "BezorgersApplicatieConnection": "Server=bezorgdirect-bezorgersapplicatie.database.windows.net;Database=BezorgDirect.BezorgersApplicatie.Context;User Id=bezorgdirect-bezorgersapi;Password=Yf4!Hfw0CagklxzH;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False",
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
+    "BezorgersApplicatieConnection": "Server=mijnbd-jesse.database.windows.net;Database=MijnBD_Jesse;User Id=Jesse;Password=Inholland1;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "LocalBezorgersApplicatieConnection": "Server=DESKTOP-MPNKHMO;Database=BezorgDirect.BezorgersApplicatie.Context;Trusted_Connection=True"
   },
   "ConnectionString": {
-    "BezorgersApplicatieConnection": "Server=bezorgdirect-bezorgersapplicatie.database.windows.net;Database=BezorgDirect.BezorgersApplicatie.Context;User Id=bezorgdirect-bezorgersapi;Password=Yf4!Hfw0CagklxzH;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False",
-    "LocalBezorgersApplicatieConnection": "Server=localhost\\SQLEXPRESS;Database=BezorgDirect.BezorgersApplicatie.Context;Trusted_Connection=True"
+    "BezorgersApplicatieConnection": "Server=mijnbd-jesse.database.windows.net;Database=MijnBD_Jesse;User Id=Jesse;Password=Inholland1;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False",
+    "LocalBezorgersApplicatieConnection": "Server=DESKTOP-MPNKHMO;Database=BezorgDirect.BezorgersApplicatie.Context;Trusted_Connection=True"
   },
   "Serilog": {
     "MinimumLevel": "Information",
