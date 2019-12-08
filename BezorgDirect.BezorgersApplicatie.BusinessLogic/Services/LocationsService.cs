@@ -291,7 +291,7 @@ namespace BezorgDirect.BezorgersApplicatie.BusinessLogic.Services
                     $"and latTo {to.Latitude}, longTo {to.Longitude} from the Google Directions API.");
                 Leg l = await TravelTo(from, to, vehicle, departureTime, apiKey);
                 return l != null
-                    ? departureTime.AddSeconds(l.DurationInTraffic.Value)
+                    ? departureTime.AddSeconds(0)
                     : throw new Exception($"Dependency failure: TravelTo returned null for latFrom " +
                     $"{from.Latitude}, longFrom {from.Longitude} to latTo {to.Latitude}, longTo {to.Longitude}.");
             }

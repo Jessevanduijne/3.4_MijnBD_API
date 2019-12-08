@@ -20,7 +20,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Cryptography.Internal" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="3.0.0" />
   </ItemGroup>
-
+  
   <ItemGroup>
     <ProjectReference Include="..\BezorgDirect.BezorgersApplicatie.BusinessLogic\BezorgDirect.BezorgersApplicatie.BusinessLogic.csproj" />
   </ItemGroup>
