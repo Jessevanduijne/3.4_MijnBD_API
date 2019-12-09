@@ -60,7 +60,7 @@ namespace BezorgDirect.BezorgersApplicatie.Api.Controllers
             [HttpTrigger(AuthorizationLevel.Function, "get", Route = "Deliveries/{id}")] HttpRequest req, string id)
         {
             string token = req.Headers["Authorization"].ToString().Replace("Bearer ", "");
-            if (_authorizationsService.IsTokenValid(token, true))
+            if (_authorizationsService.IsTokenValid(token, false))
             {
                 Delivery d = await _deliveriesService.GetDelivery(Guid.Parse(id));
                 return d != null
